@@ -1,12 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-i
-import routes from "./routes/routes"
+
+import MyStack from "./routes/routes"
 export default function App() {
   return (
-      <View>
-        {/*<routes/>*/}
-      </View>
+      <MyStack/>
 
   );
 }

@@ -1,20 +1,24 @@
 import * as React from "react";
 import {
-    Button,
     Text,
+    View,
+    TouchableOpacity
 } from "react-native";
-import {Touchable} from "react-native-web";
 
 
 export default function Screen1({ navigation }) {
 
     return (
-        <View style={{ flex: 1, padding: 0 }}>
-            <Text onPress={() => navigation.navigate("screen2")}>
-                Screen1
-            </Text>
-
-
+        <View style={[{
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center'
+        }]}>
+            <TouchableOpacity onPress={() => navigation.navigate("screen2")}>
+                <Text>
+                    Press To Navigate Screen 2
+                </Text>
+            </TouchableOpacity>
         </View>
     );
 }
