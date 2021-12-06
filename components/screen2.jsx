@@ -4,9 +4,11 @@ import {
     View,
     TouchableOpacity
 } from "react-native";
+import {useNavigation} from "@react-navigation/native";
 
 
-export default function Screen2({ navigation }) {
+export default function Screen2() {
+    const navigation = useNavigation();
 
     return (
         <View style={[{

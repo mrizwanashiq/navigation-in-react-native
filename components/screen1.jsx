@@ -4,11 +4,20 @@ import {
     View,
     TouchableOpacity
 } from "react-native";
+import {useNavigation} from "@react-navigation/native";
+
+export default class Screen2 extends React.Component {
+// export default function Screen1() {
+    constructor() {
+        super();
+        this.state = {color: "red"};
+    }
 
 
-export default function Screen1({ navigation }) {
+    render() {
+        const navigation = useNavigation();
 
-    return (
+        return (
         <View style={[{
             flex: 1,
             justifyContent: 'center',
@@ -21,4 +30,5 @@ export default function Screen1({ navigation }) {
             </TouchableOpacity>
         </View>
     );
+    }
 }
